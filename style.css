@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;}
+
+    body{
+        font-family: "Lato", sans-serif;
+        max-width: 1024px;
+        min-height: 150vh;
+    }
+    #hamburger-btn{
+        display: none;
+    }
+    .header{
+        width: 90%;
+       display: flex;
+       justify-content: space-between;
+       text-align: center;
+       padding: 10px;
+    }
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        
+    }
+
+    .nav-list li{
+        list-style: none;
+    }
+
+    .hero{
+        background-image: url(./images/background.png);
+        background-size: cover;
+        min-height: 60vh;
+        padding-top: 50px;
+        
+    }
+    .hero-continer{
+        padding-top: 50px;
+        /* border: 2px solid black; */
+    }
+    .left-wrap{
+        display: flex;
+        display: block;
+        align-items: center;
+        padding-top: 2rem ;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        border: 2px solid white;
+        border-radius: 0px 60px  60px 0px ;
+        background-color: white;
+        width: 45%;
+        
+    }
+
+    #h1-text{
+        font-size: 44px;
+        
+    }
+#p-text{
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.future-container{
+    
+    margin-top: 8rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.future-section{
+    
+    display: flex;
+
+}
+
+.image-section{
+    min-width: 510px
+    
+}
+
+.future-paragraphy{
+    min-width: 500px;
+    background-color:  #F2F0F2;
+    border-radius: 20px;
+    padding-top: 5rem;
+    padding-left: 2rem;
+
+}
+
+.future-paragraphy h1{
+    font-size: 40px;
+}
+
+.future-paragraphy p{
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+    
+.fecture-section{
+    margin-top: 5rem;
+}
+
+.fecture-paragraphy h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 44px;
+    text-align: center;
+
+}
+
+.fecture-paragraphy p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+
+.icon{
+    min-height: 200px;
+    padding: 0 3rem;
+    display: flex;
+    margin-top: 5rem;
+    gap: 30px;
+  
+    
+    
+}
+
+.icon1{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background-color:#E2F1E8;
+    
+}
+
+
+.icon1 h2{
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 1rem;
+    
+}
+
+#Contact{
+    width: 40px;;
+}
+
+
+
+
+/* for tablet */
+@media screen and (max-width: 776px){
+    .future-section{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    
+       
+        }
+
+        #p-text{
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .icon {
+            padding-bottom: 2rem;
+        }
+        .icon1 h2{
+            font-size: xx-small;
+            font-weight: 200;
+            padding-top: 0.5rem;
+
+        }
+    .icon1 {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    }
+
+    .future-paragraphy h1{
+        margin-top: 1rem;
+    }
+    .future-paragraphy p{
+        margin-bottom: 1rem;
+        padding-left: 1 rem;
+}
+
+}
+
+
+/* for mobile  */
+
+@media screen and (max-width: 425px){
+    body{
+        font-family: "Lato", sans-serif;
+        max-width: 425px;
+        min-height: 150vh;
+}
+.header{
+    width: 100%;
+
+}
+
+#logo{
+    width: 50px;
+}
+
+.nav-list{
+    display: none;
+}
+#hamburger-btn{
+display: flex;
+margin-right: 2rem;
+}
+
+.hero{
+    
+    background-image:url(./images/background.png);
+    background-size: cover;
+    background-repeat: none;
+    min-height: 100vh;
+
+}
+
+#h1-text{
+    font-size: 14px;
+}
+#p-text{
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+.hero-continer{
+    padding-top: 20px;
+}
+.left-wrap{
+
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    /* border: 2px solid white;
+    border-radius: 0px 60px  60px 0px ;
+    background-color: white; */
+    width: 65%;
+}
+
+.future-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image-section{
+    min-width: 310px;
+}
+#image1{
+    width:150px;
+    margin-left: 0;
+}
+.future-paragraphy{
+    min-width: 250px;
+    border-radius: 20px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.future-paragraphy h1{
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.future-paragraphy p{
+    font-size: 10px;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    
+    
+}
+
+.fecture-paragraphy h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 0.5rem;
+    
+
+}
+
+.fecture-paragraphy p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+    
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.icon1 h2{
+    font-size: small;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+.icon1 p{
+    font-size: smaller;
+    padding-bottom: 2rem;
+    
+}
+}
